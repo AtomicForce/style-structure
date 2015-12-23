@@ -1,0 +1,101 @@
+// ==========================================================================
+// Inputs
+// ==========================================================================
+
+// Include the partials needed for this view
+@import "../framework/_variables";
+@import "../framework/_colors";
+@import "../framework/_mixins";
+
+
+// View specific styles
+
+::-webkit-input-placeholder {
+   color: @basePlaceholderTextColor;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: @basePlaceholderTextColor;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: @basePlaceholderTextColor;
+}
+
+:-ms-input-placeholder {
+   color: @basePlaceholderTextColor;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+// Remove yellow background on auto fill in Chrome
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+.base-input {
+	.d-block;
+	.border-radius(2px);
+
+	width: 100%;
+	height: 45px;
+	padding: 0 15px;
+	font-size: 16px;
+	color: @baseInputTextColor;
+	background-color: @white;
+	border: 1px solid @baseInputBorder;
+    -webkit-appearance: none;
+
+    &.hide-errors {
+
+        &.error {
+            border: 1px solid @baseInputBorder;
+            background: #fff;
+        }
+
+        & + .form-error {
+            display: none;
+        }
+
+        &:focus, &.error:focus {
+            border-color: @mainLinkBlue;
+        }
+    }
+
+	&:focus {
+		  border-color: @mainLinkBlue;
+	}
+}
+
+textarea.base-input {
+    height: auto;
+    padding: 15px;
+    resize: none;
+    font-family: @roboto;
+}
+
+// Media queries
+
+@media @w1024 {
+
+    .base-input {
+        height: 55px;
+    }
+
+    .chosen-container {
+
+        &.chosen-container-single {
+
+            .chosen-single {
+
+                height: 55px;
+
+                span {
+                    line-height: 55px;
+                }
+            }
+        }
+    }
+}

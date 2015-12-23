@@ -1,0 +1,89 @@
+@import "_variables";
+
+// ==========================================================================
+// Typography
+// ==========================================================================
+// *Contains Media Queries
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: @headings-font-family;
+    font-weight: @headings-font-weight;
+    line-height: @headings-line-height;
+    color: @headings-color;
+}
+
+h1, .h1 { font-size: @font-size-h1; }
+h2, .h2 { font-size: @font-size-h2; }
+h3, .h3 { font-size: @font-size-h3; }
+h4, .h4 { font-size: @font-size-h4; }
+h5, .h5 { font-size: @font-size-h5; }
+h6, .h6 { font-size: @font-size-h6; }
+
+@media only screen and @w640 {
+
+    @headings-size-index: 1;
+
+    h1, .h1 { font-size: @font-size-h1 + (@headings-size-index * @headings-size-step); }
+    h2, .h2 { font-size: @font-size-h2 + (@headings-size-index * @headings-size-step); }
+    h3, .h3 { font-size: @font-size-h3 + (@headings-size-index * @headings-size-step); }
+    h4, .h4 { font-size: @font-size-h4 + (@headings-size-index * @headings-size-step); }
+    h5, .h5 { font-size: @font-size-h5 + (@headings-size-index * @headings-size-step); }
+    h6, .h6 { font-size: @font-size-h6 + (@headings-size-index * @headings-size-step); }
+
+}
+
+@media only screen and @w768 {
+
+    @headings-size-index: 2;
+
+    h1, .h1 { font-size: @font-size-h1 + (@headings-size-index * @headings-size-step); }
+    h2, .h2 { font-size: @font-size-h2 + (@headings-size-index * @headings-size-step); }
+    h3, .h3 { font-size: @font-size-h3 + (@headings-size-index * @headings-size-step); }
+    h4, .h4 { font-size: @font-size-h4 + (@headings-size-index * @headings-size-step); }
+    h5, .h5 { font-size: @font-size-h5 + (@headings-size-index * @headings-size-step); }
+    h6, .h6 { font-size: @font-size-h6 + (@headings-size-index * @headings-size-step); }
+
+}
+
+@media only screen and @w1024 {
+
+    @headings-size-index: 3;
+
+    h1, .h1 { font-size: @font-size-h1 + (@headings-size-index * @headings-size-step); }
+    h2, .h2 { font-size: @font-size-h2 + (@headings-size-index * @headings-size-step); }
+    h3, .h3 { font-size: @font-size-h3 + (@headings-size-index * @headings-size-step); }
+    h4, .h4 { font-size: @font-size-h4 + (@headings-size-index * @headings-size-step); }
+    h5, .h5 { font-size: @font-size-h5 + (@headings-size-index * @headings-size-step); }
+    h6, .h6 { font-size: @font-size-h6 + (@headings-size-index * @headings-size-step); }
+
+}
+
+@media only screen and @w1200 {
+
+    @headings-size-index: 4;
+
+    h1, .h1 { font-size: @font-size-h1 + (@headings-size-index * @headings-size-step); }
+    h2, .h2 { font-size: @font-size-h2 + (@headings-size-index * @headings-size-step); }
+    h3, .h3 { font-size: @font-size-h3 + (@headings-size-index * @headings-size-step); }
+    h4, .h4 { font-size: @font-size-h4 + (@headings-size-index * @headings-size-step); }
+    h5, .h5 { font-size: @font-size-h5 + (@headings-size-index * @headings-size-step); }
+    h6, .h6 { font-size: @font-size-h6 + (@headings-size-index * @headings-size-step); }
+
+}
+
+@media only screen and @w1600 {
+
+    @headings-size-index: 5;
+
+    h1, .h1 { font-size: @font-size-h1 + (@headings-size-index * @headings-size-step); }
+    h2, .h2 { font-size: @font-size-h2 + (@headings-size-index * @headings-size-step); }
+    h3, .h3 { font-size: @font-size-h3 + (@headings-size-index * @headings-size-step); }
+    h4, .h4 { font-size: @font-size-h4 + (@headings-size-index * @headings-size-step); }
+    h5, .h5 { font-size: @font-size-h5 + (@headings-size-index * @headings-size-step); }
+    h6, .h6 { font-size: @font-size-h6 + (@headings-size-index * @headings-size-step); }
+
+}
